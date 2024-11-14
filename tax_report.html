@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Report Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="tab-list">
+            <li><a href="pay_roll_form.html">Pay Roll</a></li>
+            <li><a href="data_entry_form.html">Data Entry</a></li>
+            <li><a href="claim_form.html">Claim</a></li>
+            <li><a href="tax_report.html">Tax Report</a></li>
+            <li><a href="payroll_summary.html">Payroll Summary</a></li>
+        </ul>
+    </nav>
+    
+    <form action="/submit" method="post">
+        <h2>Tax Report Form</h2>
+        
+        <div class="form-group">
+            <label for="reportPeriod">Report Period:</label>
+            <select id="reportPeriod" name="reportPeriod" required>
+                <option value="">Select</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="annually">Annually</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerName">Tax Payer Name:</label>
+            <input type="text" id="taxpayerName" name="taxpayerName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerAddress">Tax Payer Address:</label>
+            <input type="text" id="taxpayerAddress" name="taxpayerAddress" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerPhoneNumber">Tax Payer Phone Number:</label>
+            <input type="tel" id="taxpayerPhoneNumber" name="taxpayerPhoneNumber" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerEmail">Tax Payer Email Address:</label>
+            <input type="email" id="taxpayerEmail" name="taxpayerEmail" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerId">Tax Payer ID:</label>
+            <input type="text" id="taxpayerId" name="taxpayerId" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxpayerIncome">Tax Payer Income:</label>
+            <input type="number" id="taxpayerIncome" name="taxpayerIncome" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="taxOwed">Tax Owed:</label>
+            <input type="number" id="taxOwed" name="taxOwed" step="0.01" required>
+        </div>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+    
+</body>
+</html>

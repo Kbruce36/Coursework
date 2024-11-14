@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll Summary Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="tab-list">
+            <li><a href="pay_roll_form.html">Pay Roll</a></li>
+            <li><a href="data_entry_form.html">Data Entry</a></li>
+            <li><a href="claim_form.html">Claim</a></li>
+            <li><a href="tax_report.html">Tax Report</a></li>
+            <li><a href="payroll_summary.html">Payroll Summary</a></li>
+        </ul>
+    </nav>
+    
+    <form action="/submit" method="post">
+        <h2>Payroll Summary Form</h2>
+        
+        <div class="form-group">
+            <label for="reportPeriod">Report Period:</label>
+            <select id="reportPeriod" name="reportPeriod" required>
+                <option value="">Select</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="annually">Annually</option>
+            </select>
+        </div>
+    
+        <div class="form-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="companyAddress">Company Address:</label>
+            <input type="text" id="companyAddress" name="companyAddress" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="companyPhoneNumber">Company Phone Number:</label>
+            <input type="tel" id="companyPhoneNumber" name="companyPhoneNumber" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="companyEmail">Company Email:</label>
+            <input type="email" id="companyEmail" name="companyEmail" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="companyId">Company ID:</label>
+            <input type="text" id="companyId" name="companyId" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeJobTitle">Employee Job Title:</label>
+            <input type="text" id="employeeJobTitle" name="employeeJobTitle" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeDepartment">Employee Department:</label>
+            <input type="text" id="employeeDepartment" name="employeeDepartment" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeHoursWorked">Employee Hours Worked:</label>
+            <input type="number" id="employeeHoursWorked" name="employeeHoursWorked" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeGrossPay">Employee Gross Pay:</label>
+            <input type="number" id="employeeGrossPay" name="employeeGrossPay" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeDeductions">Employee Deductions:</label>
+            <input type="number" id="employeeDeductions" name="employeeDeductions" step="0.01" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="employeeNetPay">Employee Net Pay:</label>
+            <input type="number" id="employeeNetPay" name="employeeNetPay" step="0.01" required>
+        </div>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>

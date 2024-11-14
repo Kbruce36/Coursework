@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Reset default form styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Style form elements */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style submit button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
+
+/* Input field styling */
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Date picker styling */
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Email input styling */
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Phone number input styling */
+input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+
+/* Nav bar styling */
+
+.nav-bar {
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+}
+
+.tab-list {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.tab-list li {
+    margin: 0 10px;
+}
+
+.tab-list a {
+    color: #00698f;
+    text-decoration: none;
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.tab-list a:hover {
+    background-color: #ddd;
+}
+
+.tab-list .active a {
+    color: white;
+    background-color: #00698f;
+    border-color: #00698f;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .tab-list {
+        margin-bottom: 10px;
+    }
+}
